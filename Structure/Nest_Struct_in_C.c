@@ -53,7 +53,8 @@ void main ()
     printf("Enter employee information\n");  
     scanf("%s %s %d %s", emp.name, emp.add.city, &emp.add.pin, emp.add.phone);  
     printf("Printing the employee information....\n");  
-    printf("Name: %s\nCity: %s\nPincode: %d\nPhone: %s", emp.name, emp.add.city, emp.add.pin, emp.add.phone);  
+    printf("Name: %s\nCity: %s\nPincode: %d\nPhone: %s", emp.name, emp.add.city, 
+    emp.add.pin, emp.add.phone);  
 } 
 
 
