@@ -57,3 +57,11 @@ int main() {
 //     printf("%s %d %f\n",s3.name,s3.id,s3.marks);  
 // }  
 
+
+
+
+
+
+
+
+

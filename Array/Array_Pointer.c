@@ -16,9 +16,7 @@ int main()
 }  
 
 
-// void abc(int a) {
 
-// }
 // ///////////////////////////////
 #include<stdio.h>
 int ros9 (int *a) {

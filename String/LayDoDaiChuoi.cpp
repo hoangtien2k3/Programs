@@ -9,8 +9,8 @@
 using namespace std;
 int main ()
 {
-    string str("Hello world");
-    cout << str.size()<< endl;
+    // string str("Hello world");
+    // cout << str.size()<< endl;
     return 0;
 }
 
