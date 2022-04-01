@@ -65,7 +65,7 @@ int main() {
     for (int i=0; i<n; i++)  {
         printf ("\nName: %s\t Age: %d\t Weight: %.2f", (ptr+i)->name, (ptr+i)->age, (ptr+i)->weight);
     }
-
+    free(ptr);
     return 0;
 }
 

@@ -14,6 +14,7 @@
     + Vd: *ptr = &arr[0]: nghĩa là con trỏ sẽ trỏ vào địa chỉ đầu tiên của mảng và dùng vòng lặp để 
         truy xuất ra các phần tử trong mảng
     + con trỏ mảng giá trị là địa chỉ của một biến khác
+    
 
 
 

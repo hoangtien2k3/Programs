@@ -31,9 +31,9 @@ typedef struct {
 } person_t;
 
 int main(void){
-  person_t p;
+    person_t p;
 
-  printf("name=%d, sex=%d, age=%d, height=%d, weight=%d\n",
-         sizeof(p.name), sizeof(p.sex), sizeof(p.age), sizeof(p.height), sizeof(p.weight));
-  printf("person_t=%d\n", sizeof(p));
+    printf("name=%d, sex=%d, age=%d, height=%d, weight=%d\n",
+            sizeof(p.name), sizeof(p.sex), sizeof(p.age), sizeof(p.height), sizeof(p.weight));
+    printf("person_t=%d\n", sizeof(p));
 }
