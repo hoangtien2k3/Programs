@@ -1,7 +1,7 @@
 //! /////////////////////////////////////////
 
-if (a) có nghĩa là nếu a != 0, có thể đọc là nếu có a thì
-if (! a) có nghĩa là nếu a == 0, có thể đọc là nếu không a thì
+if ( a ) có nghĩa là nếu a != 0, có thể đọc là nếu có a thì
+if ( !a ) có nghĩa là nếu a == 0, có thể đọc là nếu không a thì
 
 
 //! /////////////////////////////////////
