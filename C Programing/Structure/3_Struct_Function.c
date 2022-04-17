@@ -44,10 +44,12 @@ int main() {
     struct ToaDo td1;
     NhapToaDo(&td1);
     inToaDo(td1);
+
+
     printf ("\n");
 
 
-    //!  ///////
+
     struct ToaDo td2;
     NhapToaDo2(&td2);
     inToaDo(td2);

@@ -33,13 +33,13 @@
 //     printf ("\nage: %d", ptr->age);
 //     printf ("\nage: %.2f", (*ptr).weight);
 
-//     // ptr->weight == (*ptr).weight;
-//     // (*ptr).age == ptr->age;
+//     //! ptr->weight == (*ptr).weight;
+//     //! (*ptr).age == ptr->age;
 
 //     return 0;
 // }
 
-//////////////
+//! //////////////
 // CẤP PHÁT BỘ NHỚ ĐỘNG TRONG CẤP C
 #include<stdio.h>
 #include<string.h>
@@ -51,21 +51,41 @@ struct person {
     char name[30];
 };
 
-int main() {
-    struct person *ptr;
-    int n; 
-    printf ("Nhap so luong person: n = ");
-    scanf ("%d", &n);
-    ptr = (struct person*) malloc(n * sizeof(struct person));
+struct person *capPhatDong(int n) {
+    struct person *pa = (struct person*) malloc(n * sizeof(struct person));
+    return pa;
+}
+
+void NhapThongTin(int n) {
+    
+    //! Cấp phát động cách 1: dùng fuction riêng
+    struct person *ptr = capPhatDong(n);
+
+    //! Cách 2: cấp phát động gọi trực tiếp hàm
+    // struct person *ptr;
+    // ptr = (struct person*) malloc(n * sizeof(struct person));
+
     for (int i=0; i<n; i++) {
         printf ("Nhap vao ten, tuoi va can nang person %d: ", i);
         scanf ("%s %d %f", (ptr+i)->name, &(ptr+i)->age, &(ptr+i)->weight);
     }
-    printf ("\nTHONG TIN:\n ");
+    printf ("\nTHONG TIN: ");
     for (int i=0; i<n; i++)  {
         printf ("\nName: %s\t Age: %d\t Weight: %.2f", (ptr+i)->name, (ptr+i)->age, (ptr+i)->weight);
     }
     free(ptr);
+}
+
+int main() {
+    int n; 
+    printf ("Nhap so luong person: n = ");
+    scanf ("%d", &n);
+
+    NhapThongTin(n);
+
     return 0;
 }
+
+
+
 
