@@ -24,10 +24,13 @@ PhanSo* capPhatPhanSo() {
 int main() {
 
     PhanSo* ps = capPhatPhanSo();
+    printf ("Nhap tuso, mauso:  ");
     scanf ("%d%d", &ps->tuso, &ps->mauso);
     printf ("%d/%d", ps->tuso, ps->mauso);
 
 }
+
+
 
 
 

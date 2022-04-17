@@ -7,13 +7,13 @@
 #include<stdlib.h>
 #include<conio.h>
 
-struct arr_integer
+typedef struct 
 {
     int size;
     int arr[100];
-};
+} arr_integer;
 
-int adjacentElementsProduct(struct arr_integer inputArray)
+int adjacentElementsProduct(arr_integer inputArray)
 {
     int arrLength = inputArray.size;
     int max = inputArray.arr[0] * inputArray.arr[1];
@@ -30,7 +30,7 @@ int adjacentElementsProduct(struct arr_integer inputArray)
 
 int main()
 {
-    struct arr_integer array;
+    arr_integer array;
     printf("Enter size of the array: ");
     scanf("%d", &array.size);
     printf("Enter the elements in array: ");
