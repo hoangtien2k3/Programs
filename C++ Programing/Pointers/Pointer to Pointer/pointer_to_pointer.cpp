@@ -16,6 +16,7 @@ int main()	{
     cout << endl;
 
     cout << "Dia chi bien value: " << endl;
+    
     cout << &value << endl;
     cout << ptr << endl;
     cout << *(*&p_to_p) << endl;

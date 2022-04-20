@@ -32,7 +32,7 @@ int Sum_Pointer(int n){
     int sum = 0;
     int *ptr = (int*) malloc(n * sizeof(int)); // hàm malloc
     // int *ptr = (int*) calloc(n, sizeof(int)); // hàm calloc
-    // nếu không thể cấp phát thì hàm malloc sẽ trả về kết quả NULL
+
     if (ptr == NULL) {
         printf ("Error!");
         return 0;
@@ -56,7 +56,7 @@ int main() {
 
 
 ///////
-
+/*
 // Sử dụng hàm malloc, realloc và free;
 #include <stdio.h>
 #include <stdlib.h>
@@ -65,13 +65,17 @@ int main()
     int *ptr, n1, n2, sum = 0;
     printf("Nhap so luong phan tu: ");
     scanf("%d", &n1);
+
     ptr = (int*) malloc(n1 * sizeof(int));
+
     printf("Dia chi cua vung nho vua cap phat: %u", ptr);
     
     printf("\nNhap lai so luong phan tu: ");
     scanf("%d", &n2);
+
     // phân bổ lại vùng nhớ
     ptr = (int*) realloc(ptr, n2 * sizeof(int));
+
     printf("Dia chi cua vung nho duoc cap phat lai: %u", ptr);
     printf ("\nNhap vao phan tu: ");
     for (int i=0; i<n2; i++) {
@@ -80,6 +84,10 @@ int main()
     }
     printf ("\nSum = %d", sum);
     // giải phóng
+
     free(ptr);
+
     return 0;
 }
+
+*/

@@ -52,7 +52,11 @@ struct person {
 };
 
 struct person *capPhatDong(int n) {
+    
+    // struct person *pa = {n, n > 0 ? (struct person*) malloc(n * sizeof(struct person)) : NULL};
+
     struct person *pa = (struct person*) malloc(n * sizeof(struct person));
+
     return pa;
 }
 
@@ -69,12 +73,14 @@ void NhapThongTin(int n) {
         printf ("Nhap vao ten, tuoi va can nang person %d: ", i);
         scanf ("%s %d %f", (ptr+i)->name, &(ptr+i)->age, &(ptr+i)->weight);
     }
+    
     printf ("\nTHONG TIN: ");
     for (int i=0; i<n; i++)  {
         printf ("\nName: %s\t Age: %d\t Weight: %.2f", (ptr+i)->name, (ptr+i)->age, (ptr+i)->weight);
     }
     free(ptr);
 }
+
 
 int main() {
     int n; 
