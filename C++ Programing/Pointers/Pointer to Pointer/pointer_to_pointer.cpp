@@ -16,9 +16,9 @@ int main()	{
     cout << endl;
 
     cout << "Dia chi bien value: " << endl;
-    
+
     cout << &value << endl;
-    cout << ptr << endl;
+    cout << ptr << endl; 
     cout << *(*&p_to_p) << endl;
     cout << *p_to_p << endl << endl; // địa chỉ được giữ bởi ptr
 

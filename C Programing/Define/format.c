@@ -11,6 +11,8 @@ if ( !a ) có nghĩa là nếu a == 0, có thể đọc là nếu không a thì
 
 %d : Số nguyên hệ 10 có dấu
 
+%u : Số nguyên hệ 10 không có dấu
+
 %f : Số chấm động (VD 6.33 khi in sẽ ra 6.330000)
 
 %e : Số chấm động (ký hiệu có số mũ)

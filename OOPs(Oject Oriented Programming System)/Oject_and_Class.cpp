@@ -52,9 +52,6 @@ int main() {
 
 
 
-
-
-
 ***** C++ ví dụ về lớp và đối tượng trong C++: khởi tạo và hiển thị dữ liệu thông qua phương thức
 
 #include<iostream>
@@ -82,6 +79,7 @@ int main() {
     s2.insert(202, "Hoang Chung");
     s1.display();
     s2.display();
+
 
     return 0;
 }

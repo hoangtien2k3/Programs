@@ -13,6 +13,9 @@
     + constructor có tham số
 
 
+
+
+//! //////////////////////////////////////////
 **** Constructor mặc định C++
 (một constructor không có đối số được gọi là một constructor mặc định)
 
@@ -28,6 +31,5 @@ class Employee {
 int main() {
     Employee e1; // khởi tạo đối tượng Employee
     Employee e2;
-
     return 0;
 }

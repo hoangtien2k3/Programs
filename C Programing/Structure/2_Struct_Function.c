@@ -15,7 +15,6 @@ PhanSo* capPhatPhanSo() {
     //! C1
     // return (PhanSo*) malloc(sizeof(PhanSo)); 
 
-
     //! C2
     PhanSo* pa = (PhanSo*) malloc(sizeof(PhanSo)); // xin phất phát 1 vùng nhớ với 4 byte
     return pa; // return pa[0];
